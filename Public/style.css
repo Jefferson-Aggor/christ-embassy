@@ -45,7 +45,7 @@ p {
 }
 .header {
   width: 100vw;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/img-1.jpg");
   background-repeat: no-repeat;
   background-position: top center;
