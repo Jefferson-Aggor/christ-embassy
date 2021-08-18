@@ -1,0 +1,17 @@
+{
+  "name": "christ_embassy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jefferson Aggor",
+  "license": "MIT",
+  "dependencies": {
+    "@vonage/server-sdk": "^2.10.10",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3"
+  }
+}

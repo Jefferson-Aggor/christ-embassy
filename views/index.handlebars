@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+   <title>Night Of Praise | Registration</title>
+</head>
+<body>
+
+    <section class="header">
+      <div class="header-container">
+        <div class="header-text-content">
+          
+          <p class="text-sm branch">You are invited to</p>
+          <h2 class="header-title text-lg">An Evening of Praise</h2>
+          <h2 class="header-title text-lg">& Worship</h2>
+        </div>
+
+        <div class="header-date-time">
+          <div class="date-container">
+            <div class="date">
+              <p class="num" id="days"></p>
+              <p class="date-text">Days</p>
+            </div>
+            <div class="date">
+              <p class="num" id="hours"></p>
+              <p class="date-text">Hours</p>
+            </div>
+            <div class="date">
+              <p class="num" id="minutes"></p>
+              <p class="date-text">Minutes</p>
+            </div>
+            <div class="date">
+              <p class="num" id="seconds"></p>
+              <p class="date-text">Seconds</p>
+            </div>
+          </div>
+          <a href="#form" class="btn btn-primary btn-lg">Pre-Register</a>
+        </div>
+      </div>
+    </section>
+
+<div class="notify">
+    <p class="notify-text">Seat Booked!</p>
+</div>
+    <section id="" class="p-5">
+      <h3 class="mb-5 heading-text">
+          Reserve Seat!!
+         </h3>
+        <form action="" id="form">
+      <div class="form-floating mb-3">
+        <input
+          type="name"
+          name="name"
+          class="form-control"
+          id="floatingName"
+          placeholder="Full name"
+          required
+        />
+        <label for="floatingName">Full Name..</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="tel"
+          name="contact"
+          class="form-control"
+          id="floatingContact"
+          placeholder="Contact"
+          required
+        />
+        <label for="floatingContact">Contact</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          name="location"
+          class="form-control"
+          id="floatingLocation"
+          placeholder="Where are you visiting from?"
+          required
+        />
+        <label for="floatingLocation">Where are you visiting from?</label>
+      </div>
+
+      <div class="form-floating mb-5">
+        <textarea
+          class="form-control"
+          name="expectations"
+          placeholder="Expectations"
+          id="floatingTextarea"
+        ></textarea>
+        <label for="floatingTextarea">Expectations</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Reserve Now</button>
+        </form>
+
+    </section>
+
+    <script>
+      const daysUI = document.getElementById("days");
+      const hoursUI = document.getElementById("hours");
+      const minutesUI = document.getElementById("minutes");
+      const secondsUI = document.getElementById("seconds");
+
+      const countDate = () => {
+        const count = new Date("September 3, 2021 17:00:00").getTime();
+
+        const currentTime = new Date().getTime();
+
+        const gap = count - currentTime;
+
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+
+        const textDay = Math.floor(gap / day);
+        const textHours = Math.floor((gap % day) / hour);
+        const textMinute = Math.floor((gap % hour) / minute);
+        const textSeconds = Math.floor((gap % minute) / second);
+
+        daysUI.innerText = textDay;
+        minutesUI.innerText = textMinute;
+        hoursUI.innerText = textHours;
+        secondsUI.innerText = textSeconds;
+      };
+
+      setInterval(countDate, 1000);
+      
+    </script>
+    <script>
+  let firebaseConfig = {
+    apiKey: "AIzaSyDUfj2V6j-yER606Dr6iE1VwZdvel0CRTw",
+    authDomain: "christ-embassy-15986.firebaseapp.com",
+    projectId: "christ-embassy-15986",
+    storageBucket: "christ-embassy-15986.appspot.com",
+    messagingSenderId: "865231538412",
+    appId: "1:865231538412:web:ae11233c09155e0d5ebdc9",
+    measurementId: "G-4VB21TMP58"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  db.settings({timeStampsInSnapshots: true});
+  
+</script>
+<script src="/app.js"></script>
+
+</body>
+</html>

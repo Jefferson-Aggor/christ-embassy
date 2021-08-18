@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Night Of Praise | Registration</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header-container">
+        <div class="header-text-content">
+          <p class="text-md name">Christ Embassy - Akuse</p>
+          <p class="text-sm branch">presents</p>
+          <h2 class="header-title text-lg">An Evening of Praise</h2>
+          <h2 class="header-title text-lg">& Worship</h2>
+        </div>
+
+        <div class="header-date-time">
+          <div class="date-container">
+            <div class="date">
+              <p class="num" id="days">6</p>
+              <p class="date-text">Days</p>
+            </div>
+            <div class="date">
+              <p class="num" id="hours">3</p>
+              <p class="date-text">Hours</p>
+            </div>
+            <div class="date">
+              <p class="num" id="minutes">50</p>
+              <p class="date-text">Minutes</p>
+            </div>
+            <div class="date">
+              <p class="num" id="seconds">50</p>
+              <p class="date-text">Seconds</p>
+            </div>
+          </div>
+          <a href="#form" class="btn btn-primary">Pre-Register</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="form" class="p-5">
+      <h3>Reserve Space!</h3>
+
+      <div class="form-floating mb-3">
+        <input
+          type="name"
+          class="form-control"
+          id="floatingName"
+          placeholder="Full name"
+        />
+        <label for="floatingName">Full Name..</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="tel"
+          class="form-control"
+          id="floatingContact"
+          placeholder="Contact"
+        />
+        <label for="floatingContact">Contact</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingLocation"
+          placeholder="Where are you visiting from?"
+        />
+        <label for="floatingLocation">Where are you visiting from?</label>
+      </div>
+
+      <div class="form-floating mb-5">
+        <textarea
+          class="form-control"
+          placeholder="Expectations"
+          id="floatingTextarea"
+        ></textarea>
+        <label for="floatingTextarea">Expectations</label>
+      </div>
+
+      <button type="button" class="btn btn-primary">Reserve Now</button>
+    </section>
+  </body>
+</html>

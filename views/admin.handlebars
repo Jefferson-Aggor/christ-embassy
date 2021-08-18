@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+     <title>Night Of Praise | Admin</title>
+</head>
+<body>
+   <nav class="navbar navbar-dark bg-primary admin-nav">
+       <div class="container">
+<p class="nav-header">Dashboard</p>
+       <div class="nav-details">
+           <div id="progress" class="nav-progress"></div>
+           <div class="progress-val"></div>
+       </div>
+       </div>
+       
+</nav>
+<div class="notify">
+          <p class="notify-text">Error Fetching Data</p>
+      </div>
+   <section class="admin">
+       
+       <div class="cta cta-overall-booking">
+          <div class="icon">
+               <i class="fas fa-chart-pie"></i>
+          </div>
+           <div class="cta-details">
+              <p class="cta-text">Overrall Bookings</p><span class="cta-num overall-num" ></span>
+           </div>
+          
+       </div>
+       <div class="cta cta-expected-booking">
+          <div class="icon">
+               <i class="fas fa-chart-line"></i>
+          </div>
+           <div class="cta-details">
+ <p class="cta-text">Expected Bookings</p><span class="cta-num expected-num">250</span>
+           </div>
+          
+       </div>
+       </div>
+       
+   </section>
+
+   <section class="bookings">
+     <div class="table-responsive-md">
+     <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Location</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+   
+  </tbody>
+</table>
+     </div>
+
+   </section>
+
+
+    <script>
+  let firebaseConfig = {
+    apiKey: "AIzaSyDUfj2V6j-yER606Dr6iE1VwZdvel0CRTw",
+    authDomain: "christ-embassy-15986.firebaseapp.com",
+    projectId: "christ-embassy-15986",
+    storageBucket: "christ-embassy-15986.appspot.com",
+    messagingSenderId: "865231538412",
+    appId: "1:865231538412:web:ae11233c09155e0d5ebdc9",
+    measurementId: "G-4VB21TMP58"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  db.settings({timeStampsInSnapshots: true});
+</script>
+<script src="/admin.js"></script>
+</body>
+</html>
