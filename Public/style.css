@@ -179,7 +179,7 @@ p {
   padding: 1rem 0.5rem;
 }
 .icon {
-  background: #999999;
+  background: #dcdcdc;
   text-align: center;
   font-size: 4rem;
   padding: 0 1rem;
@@ -244,5 +244,8 @@ p {
   }
   .branch {
     margin-bottom: 2rem;
+  }
+  .icon .fas {
+    margin-top: 1.4rem;
   }
 }
