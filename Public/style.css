@@ -45,6 +45,7 @@ p {
 }
 .header {
   width: 100vw;
+  height: 100vh;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/img-1.jpg");
   background-repeat: no-repeat;
@@ -202,14 +203,17 @@ p {
   }
   .cta {
     margin-bottom: 0.5rem;
+    background-color: #f3f3f3;
   }
 
   .icon {
     font-size: 1.6rem;
+    color: #666;
   }
   .cta-text {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 500;
+    color: #333;
   }
   .icon {
     font-size: 2.5rem;
@@ -219,9 +223,9 @@ p {
     font-size: 1rem;
   }
   td {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
-    color: #222;
+    color: #777;
   }
 
   .bookings {

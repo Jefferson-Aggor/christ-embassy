@@ -33,7 +33,7 @@ db.collection("bookings")
     progressUI.style.color = "green";
 
     if (data.docs.length === 0) {
-      bookings.innerHTML += `<p class='text-danger alert-text mt-3'>Bad Internet Connection</p>`;
+      bookings.innerHTML += `<p class='text-danger alert-text mt-3'>No bookings loaded!. </p>`;
     }
 
     data.docs.forEach((doc) => {

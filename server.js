@@ -15,8 +15,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 const vonage = new Vonage({
-  apiKey: "2f67ab0d",
-  apiSecret: "ZkNUU5uNt1pskJCt",
+  apiKey: "11e53dab",
+  apiSecret: "XWq3PB3be7n8azmo",
 });
 
 app.get("/", (req, res) => {
@@ -26,8 +26,8 @@ app.get("/", (req, res) => {
 app.get("/admin", (req, res) => res.render("admin"));
 
 app.post("/", (req, res) => {
-  const from = "NOW-Akuse";
-  const to = "233559305117";
+  const from = "NOPW-Akuse";
+  const to = "233548907875";
   const text = `Registration Made!.\n Details \n name: ${
     req.body.name
   } \n contact: ${req.body.contact} \n location: ${
